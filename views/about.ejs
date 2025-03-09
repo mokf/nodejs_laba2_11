@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас</title>
+</head>
+<body>
+<h1>Інформація про нашу бригаду</h1>
+<ul>
+    <% team.forEach(member => { %>
+        <li><%= member.name %> - <%= member.role %></li>
+    <% }) %>
+</ul>
+<img src="/images/team.jpg" alt="Наша бригада">
+<a href="/">На головну сторінку</a>
+</body>
+</html>
